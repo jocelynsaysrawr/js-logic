@@ -216,8 +216,18 @@ console.log("spareChange: ", spareChange(cash));
  * Console.log your result.
 */ 
 
+function dirty30(one, two, three){
+	var sum = one + two + three;
+	if(sum > 30){
+		return true;
+	}else{
+		return false;
+	}
+}
 
+var z = 7;
 
+console.log("dirty30: ", dirty30(x, y, z));
 /*
  * #10
  * Function - evenStevens
