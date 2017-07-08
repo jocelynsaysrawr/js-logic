@@ -240,7 +240,17 @@ console.log("dirty30: ", dirty30(x, y, z));
  * Console.log your result.
 */ 
 
+function evenStevens(num){
+	if(num || num / 2){
+		return true;
+	}else{
+		return false;
+	}
+}
 
+
+
+console.log("evenStevens: ", evenStevens(x));
 
 
 /*
