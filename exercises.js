@@ -117,7 +117,15 @@ console.log("mustBeTrue: ", mustBeTrue(scared));
  * Console.log your result.
 */
 
+function bigBird(word){
+	if(word.length === 3){
+		return "Word to Big Bird!";
+	}
+}
 
+var laugh = "LOL";
+
+console.log("bigBird: ", bigBird(laugh));
 
 /*
  * #6
