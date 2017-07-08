@@ -189,6 +189,17 @@ console.log("notEqual: ", notEqual(firstName, lastName));
  * Console.log your result.
 */ 
 
+function spareChange(money){
+	if(money > 100){
+		return true;
+	}else{
+		return false;
+	}
+}
+
+var cash = 1367;
+
+console.log("spareChange: ", spareChange(cash));
 
 
 /*
