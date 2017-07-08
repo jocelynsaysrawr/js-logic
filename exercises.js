@@ -140,6 +140,18 @@ console.log("bigBird: ", bigBird(laugh));
  * Console.log your result.
 */
 
+function isEqual(first, second){
+	if(first.length === second.length){
+		return "You look mahvelous!";
+	}else{
+		return "I don't know who you are anymore.";
+	}
+}
+
+var firstName = "Jocelyn";
+var lastName = "Belden";
+
+console.log("isEqual: ", isEqual(firstName, lastName));
 
 /*
  * #7
