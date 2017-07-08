@@ -70,6 +70,16 @@ console.log("login: ", login("test1234"));
  * Console.log your result.
 */
 
+function isGreaterThan(first, second){
+	if(first > second){
+		return true;
+	}
+}
+
+var x = 8;
+var y = 3;
+
+console.log("isGreaterThan: ", isGreaterThan(x, y));
 
 
 /*
