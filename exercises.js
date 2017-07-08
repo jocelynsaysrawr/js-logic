@@ -166,6 +166,16 @@ console.log("isEqual: ", isEqual(firstName, lastName));
  * Console.log your result.
 */
 
+function notEqual(first, second){
+	if(first.length !== second.length){
+		return "Opposites do attract.";
+	}else{
+		return "Cause it's like you're my mirror.";
+	}
+}
+
+console.log("notEqual: ", notEqual(firstName, lastName));
+
 
 /*
  * #8
