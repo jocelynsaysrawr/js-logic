@@ -94,6 +94,15 @@ console.log("isGreaterThan: ", isGreaterThan(x, y));
  * Console.log your result.
 */
 
+function mustBeTrue(boo){
+	if(boo === true){
+		return true;
+	}
+}
+
+var scared = true;
+
+console.log("mustBeTrue: ", mustBeTrue(scared));
 
 
 /*
