@@ -462,7 +462,17 @@ for (var i = 0; i<myFavFoods.length; i++){
  * Console.log your result.
 */
 
+var numArray = [54, 2, 35, 90, 102];
+var total = 0;
 
+function sumItUp(arr){
+	for(var i = 0; i<arr.length; i++){
+		total += arr[i];
+	}
+	return total;
+}
+
+console.log(sumItUp(numArray));
 
 /*
  * #18
