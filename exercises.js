@@ -104,6 +104,9 @@ var scared = true;
 
 console.log("mustBeTrue: ", mustBeTrue(scared));
 
+var scary = mustBeTrue(false);
+console.log("mustBeTrue: ", scary);
+
 
 /*
  * #5
@@ -153,6 +156,19 @@ var lastName = "Belden";
 
 console.log("isEqual: ", isEqual(firstName, lastName));
 
+function isEqual2(first, second){
+	if(first === second){
+		return "You look mahvelous!";
+	}else{
+		return "I don't know who you are anymore.";
+	}
+}
+
+var firstName = "Jocelyn";
+var lastName = "Belden";
+
+console.log("isEqual: ", isEqual(firstName, lastName));
+
 /*
  * #7
  * Function - notEqual
@@ -176,6 +192,15 @@ function notEqual(first, second){
 
 console.log("notEqual: ", notEqual(firstName, lastName));
 
+function notEqual2(first, second){
+	if(first !== second){
+		return "Opposites do attract.";
+	}else{
+		return "Cause it's like you're my mirror.";
+	}
+}
+
+console.log("notEqual: ", notEqual(firstName, lastName));
 
 /*
  * #8
@@ -293,7 +318,7 @@ console.log("daClub: ", daClub(hasCover, canParty));
 */ 
 
 function graduation(credit, thesis){
-	if(credit >= 120|| thesis === true){
+	if(credit >= 120 || thesis === true){
 		return "Congratulations on a job well done.";
 	}else{
 		return "See you in summer school.";
@@ -350,7 +375,7 @@ var budget = 75;
 var doughnutPrice = 4;
 var doughnutBought = 0;
 
-function buyDoughnut(){
+/*function buyDoughnut(){
 	budget = budget - doughnutPrice;
 	return budget, doughnutBought ++;
 }
@@ -362,9 +387,20 @@ console.log("buyDoughnut: ",budget, doughnutBought);
 buyDoughnut();
 console.log("buyDoughnut: ", budget, doughnutBought);
 buyDoughnut();
-console.log("buyDoughnut: ",budget, doughnutBought);
+console.log("buyDoughnut: ",budget, doughnutBought); */
 
+function buyDoughnut(){
+	if(budget >= doughnutPrice){
+		budget = budget - doughnutPrice;
+		doughnutBought++;
+	}
 
+	return budget, doughnutBought;
+}
+
+buyDoughnut();
+console.log("budget: ", budget);
+console.log("doughnutBought: ", doughnutBought);
 
 
 /*
@@ -393,6 +429,12 @@ for (var i = 0; i<toyotaModels.length; i++){
  * "Player: 4"
  * "Player: 5"
 */
+
+var players = ["Player: 1", "Player: 2", "Player: 3", "Player: 4", "Player: 5"];
+
+for (var i = 0; i<players.length; i++){
+	console.log("15.Players: ", players[i]);
+}
 
 
 /* 
