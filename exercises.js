@@ -430,10 +430,9 @@ for (var i = 0; i<toyotaModels.length; i++){
  * "Player: 5"
 */
 
-var players = ["Player: 1", "Player: 2", "Player: 3", "Player: 4", "Player: 5"];
 
-for (var i = 0; i<players.length; i++){
-	console.log("15.Players: ", players[i]);
+for (var i = 1; i<=5; i++){
+	console.log("15.Player: ", i);
 }
 
 
@@ -442,6 +441,7 @@ for (var i = 0; i<players.length; i++){
  * Create a for loop that will iterate and console.log each item in the array below:
 */
   var myFavFoods = ["lemon bar", "carrot cake", "nachos", "bacon cheeseburger", "ramen", "sweet potato fries", "chimichanga"];
+
 
 
 /*
