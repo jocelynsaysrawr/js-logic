@@ -266,6 +266,18 @@ console.log("evenStevens: ", evenStevens(x));
  * Console.log your result.
 */ 
 
+function daClub(cover, age){
+	if(cover && age >= 21){
+		return "Welcome to the Legends Lounge.";
+	}else{
+		return "Chuck E Cheese is across the street."
+	}
+}
+
+var hasCover = 25;
+var canParty = 23;
+
+console.log("daClub: ", daClub(hasCover, canParty));
 
 /*
  * #12
@@ -309,6 +321,14 @@ console.log("evenStevens: ", evenStevens(x));
  * Console.log budget and doughnutBought again.
 */ 
 
+var budget = 75;
+var doughnutPrice = 4;
+var doughnutBought = 0;
+
+function buyDoughnut(){
+
+
+}
 
 
 
