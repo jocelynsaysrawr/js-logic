@@ -267,7 +267,7 @@ console.log("evenStevens: ", evenStevens(x));
 */ 
 
 function daClub(cover, age){
-	if(cover && age >= 21){
+	if(cover >= 21 && age >= 21){
 		return "Welcome to the Legends Lounge.";
 	}else{
 		return "Chuck E Cheese is across the street."
@@ -293,15 +293,15 @@ console.log("daClub: ", daClub(hasCover, canParty));
 */ 
 
 function graduation(credit, thesis){
-	if(credit || thesis >= 120){
+	if(credit >= 120|| thesis === true){
 		return "Congratulations on a job well done."
 	}else{
 		return "See you in summer school."
 	}
 }
 
-var hasA = 200;
-var wroteThesis = 95;
+var hasA = 117;
+var wroteThesis = true;
 
 console.log("graduation: ", graduation(hasA, wroteThesis));
 
@@ -321,8 +321,10 @@ console.log("graduation: ", graduation(hasA, wroteThesis));
 function moneyTrain(speed){
 	if(speed < 50){
 		return "You are riding Honolulu's Rail."
-	}else{
+	}else if(speed < 100){
 		return "You are riding an Amtrak."
+	}else{
+		return "Now you ballin' in the Shinkansen!"
 	}
 }
 
