@@ -270,7 +270,7 @@ function daClub(cover, age){
 	if(cover >= 21 && age >= 21){
 		return "Welcome to the Legends Lounge.";
 	}else{
-		return "Chuck E Cheese is across the street."
+		return "Chuck E Cheese is across the street.";
 	}
 }
 
@@ -294,9 +294,9 @@ console.log("daClub: ", daClub(hasCover, canParty));
 
 function graduation(credit, thesis){
 	if(credit >= 120|| thesis === true){
-		return "Congratulations on a job well done."
+		return "Congratulations on a job well done.";
 	}else{
-		return "See you in summer school."
+		return "See you in summer school.";
 	}
 }
 
@@ -320,11 +320,11 @@ console.log("graduation: ", graduation(hasA, wroteThesis));
 
 function moneyTrain(speed){
 	if(speed < 50){
-		return "You are riding Honolulu's Rail."
+		return "You are riding Honolulu's Rail.";
 	}else if(speed < 100){
-		return "You are riding an Amtrak."
+		return "You are riding an Amtrak.";
 	}else{
-		return "Now you ballin' in the Shinkansen!"
+		return "Now you ballin' in the Shinkansen!";
 	}
 }
 
@@ -351,9 +351,18 @@ var doughnutPrice = 4;
 var doughnutBought = 0;
 
 function buyDoughnut(){
-
-
+	budget = budget - doughnutPrice;
+	return budget, doughnutBought ++;
 }
+
+buyDoughnut();
+console.log("buyDoughnut: ", budget, doughnutBought);
+buyDoughnut();
+console.log("buyDoughnut: ",budget, doughnutBought);
+buyDoughnut();
+console.log("buyDoughnut: ", budget, doughnutBought);
+buyDoughnut();
+console.log("buyDoughnut: ",budget, doughnutBought);
 
 
 
