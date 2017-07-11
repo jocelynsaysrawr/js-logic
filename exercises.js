@@ -292,6 +292,18 @@ console.log("daClub: ", daClub(hasCover, canParty));
  * Console.log your result.
 */ 
 
+function graduation(credit, thesis){
+	if(credit || thesis >= 120){
+		return "Congratulations on a job well done."
+	}else{
+		return "See you in summer school."
+	}
+}
+
+var hasA = 200;
+var wroteThesis = 95;
+
+console.log("graduation: ", graduation(hasA, wroteThesis));
 
 
 /*
